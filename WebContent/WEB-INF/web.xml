@@ -1,0 +1,16 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+ <resource-ref>
+    <res-ref-name>jdbc/DefaultDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+  </resource-ref>
+  <servlet>
+    <description></description>
+    <display-name>SensorsServlet</display-name>
+    <servlet-name>SensorsServlet</servlet-name>
+    <servlet-class>com.thorstenfreitag.hcpiotjava.SensorsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SensorsServlet</servlet-name>
+  <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  </web-app>
